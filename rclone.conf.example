@@ -1,0 +1,18 @@
+# Rclone config example — copy to ~/.config/rclone/rclone.conf (or set RCLONE_CONFIG).
+# Remote names here must match BG_SYNC_SOURCE and BG_SYNC_DEST (e.g. gdrive: and s3:bucket-name/backups).
+
+[gdrive]
+type = drive
+client_id = 
+client_secret = 
+scope = drive
+token = 
+
+[s3]
+type = s3
+provider = AWS
+env_auth = false
+access_key_id = 
+secret_access_key = 
+region = eu-west-1
+acl = private
