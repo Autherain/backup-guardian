@@ -2,6 +2,8 @@
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
 # Binaries for programs and plugins
+backup-guardian-runner
+backup-guardian-migrate
 *.exe
 *.exe~
 *.dll
@@ -27,6 +29,12 @@ go.work.sum
 # env file
 .env
 
+# rclone config (secrets); use rclone.conf.example as template
+rclone.conf
+
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# SQLite database
+*.db
